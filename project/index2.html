@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Conference Management System - Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    .container {
+      display: flex;
+      height: 100vh;
+      background-color: #FFFFFF;
+    }
+
+    .homepage {
+      flex: 7;
+      padding: 40px;
+      background-color: #333333;
+      border-radius: 8px 0 0 8px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .login-area {
+      flex: 3;
+      padding: 40px;
+      background-color: #e6e6fa;
+      border-radius: 0 8px 8px 0;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    h1 {
+      color: #FFF;
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      color: #FFF;
+      font-size: 18px;
+      margin-bottom: 30px;
+    }
+
+    a {
+      display: inline-block;
+      padding: 12px 24px;
+      font-size: 18px;
+      color: #fff;
+      background-color: #007bff;
+      border-radius: 4px;
+      text-decoration: none;
+      transition: background-color 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #0056b3;
+    }
+
+    h2 {
+      color: #333;
+      font-size: 24px;
+      margin-bottom: 20px;
+    }
+
+    form {
+      margin-top: 20px;
+    }
+
+    label {
+      display: block;
+      font-size: 16px;
+      margin-bottom: 8px;
+    }
+
+    input[type="text"],
+    input[type="password"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 4px;
+      border: 1px solid #ccc;
+    }
+
+    .buttons {
+      margin-top: 20px;
+    }
+
+    button {
+      padding: 12px 24px;
+      font-size: 18px;
+      color: #fff;
+      background-color: #007bff;
+      border-radius: 4px;
+      border: none;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button[type="submit"] {
+      margin-right: 10px;
+    }
+
+    button[type="reset"] {
+      background-color: #ccc;
+    }
+
+    button:hover {
+      background-color: #0056b3;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      border-radius: 4px;
+    }
+  </style>
+ <script>
+    function validateForm() {
+      const username = document.getElementById('username').value;
+      const password = document.getElementById('password').value;
+
+      if (username.length < 6 || password.length < 6) {
+        alert('Username and password must be at least 6 characters long.');
+        return false;
+      }
+    }
+  </script>
+</head>
+<body>
+  <div class="container">
+    <div class="homepage">
+      <img class="logo" src="https://upload.wikimedia.org/wikipedia/en/9/94/UIET_logo.png" alt="Conference Logo">
+      <h1>University Institute of Engineering and Technology, Chandigarh</h1>
+      <p>Welcome to Online Conference management, Register yourself to create and join new conferences.</p>
+      
+    </div>
+    <div class="login-area">
+      <h2>Register</h2>
+      <form id="login-form" action="event.html" onsubmit="return validateForm()">
+        <label for="username">Username</label>
+        <input type="text" id="username" placeholder="minimum 6 characters required" name="username" required>
+        <label for="password">Password</label>
+        <input type="password" placeholder="Enter your password" id="password" name="password" required>
+        <div class="buttons">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </div>
+  </div>
+  <footer>
+    &copy; Developed by Vishal
+  </footer>
+</body>
+</html>
