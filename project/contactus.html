@@ -8,7 +8,6 @@
       margin: 0;
       padding: 0;
     }
-
     header {
       background-color: #4285f4;
       color: #fff;
@@ -17,95 +16,91 @@
       justify-content: space-between;
       align-items: center;
     }
-    header h1 {
-      margin: 0;
-    }
-
-    header img {
-      width: 100px;
-      height: 100px;
-    }
-
     nav ul {
       list-style-type: none;
       margin: 0;
       padding: 0;
     }
-
     nav li {
       display: inline;
     }
-
     nav a {
       color: #333;
       text-decoration: none;
       padding: 10px;
     }
-
-    section {
-      padding: 20px;
-    }
-
-    form {
-      width: 50%;
-      margin: auto;
-    }
-
-    label, input, textarea {
-      display: block;
-      margin-bottom: 10px;
-    }
-
-    input[type="submit"] {
-      background-color: #4285f4;
-      color: #fff;
-      padding: 10px 20px;
-      border: none;
-      cursor: pointer;
-    }
-
-    footer {
-      background-color: #f9f9f9;
-      padding: 20px;
-      text-align: center;
-      font-size: 12px;
-    }
-  </style>
+    header h1 {
+      margin: 0;
+      section {
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+        }
+        .social-media {
+            width: 30%;
+        }
+        .contact-info {
+            width: 70%;
+        }
+        .social-media ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .social-media li {
+            margin-bottom: 10px;
+        }
+        .social-media a {
+            color: #333;
+            text-decoration: none;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
-  <header>
-     <h1 style="margin-right: auto;">Contact Us</h1>
-    <img src="https://upload.wikimedia.org/wikipedia/en/9/96/Panjab_University_logo.png" alt="Logo">
-  </header>
-
-  <nav>
-    <ul>
-      <li><a href="index2.html">Home</a></li>
-      <li><a href="schedule.html">Schedule</a></li>
-      <li><a href="attendees.html">Attendees</a></li>
-      <li><a href="homepage.html">Contact Us</a></li>
-      <li><a href="about.html">About Us</a></li>
-    </ul>
-  </nav>
-
-  <section>
-    <h2>Send us a message</h2>
-    <form>
-      <label for="name">Name:</label>
-      <input type="text" id="name" name="name" required>
-
-      <label for="email">Email:</label>
-      <input type="email" id="email" name="email" required>
-
-      <label for="message">Message:</label>
-      <textarea id="message" name="message" rows="5" required></textarea>
-
-      <input type="submit" value="Send">
-    </form>
-  </section>
-
-  <footer>
-    &copy; Developed by Vishal
-  </footer>
+    <header>
+        <h1>Contact Us</h1>
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/96/Panjab_University_logo.png" alt="Logo" height="50">
+    </header>
+    <nav>
+        <ul>
+          <li><a href="homepage.html">Home</a></li>
+          <li><a href="schedule.html">Schedule</a></li>
+          <li><a href="attendees.html">Attendees</a></li>
+          <li><a href="contactus.html">Contact Us</a></li>
+          <li><a href="about.html">About Us</a></li>
+        </ul>
+      </nav>
+    <section>
+        <div class="contact-info">
+            <h2>Get in touch</h2>
+            <p>
+                For any inquiries or questions, please fill out the form below or reach out to us using the contact details provided.
+            </p>
+            <form>
+                <label for="name">Name:</label>
+                <input type="text" placeholder="Enter your Name" id="name" name="name" required>
+          
+                <label for="email">Email:</label>
+                <input type="email" placeholder="enter your email" id="email" name="email" required>
+          
+                <label for="message">Message:</label>
+                <input type="message" placeholder="enter your message" id="message" name="message" required>
+          
+                <input type="submit" value="Send">
+              </form>
+        </div>
+        <div class="social-media">
+            <h2>Follow us</h2>
+            <ul>
+                <li><a href="https://www.facebook.com/vishuror3101">Facebook</a></li>
+                <li><a href="https://in.linkedin.com/in/vishal-ror-721b06265">Linkedin</a></li>
+                <li><a href="https://www.instagram.com/vishuror/">Instagram</a></li>
+                <!-- Add more social media links as needed -->
+            </ul>
+        </div>
+    </section>
+    <footer>
+        &copy; Developed by Vishal
+      </footer>
 </body>
 </html>
